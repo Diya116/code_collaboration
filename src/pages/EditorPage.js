@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import toast from 'react-hot-toast';
-import ACTIONS from '../Actions';
-import Client from '../components/Client';
-import Editor from '../components/Editor';
-import { initSocket } from '../socket';
+import ACTIONS from '../Actions.js';
+import Client from '../components/Client.js';
+import Editor from '../components/Editor.js';
+import { initSocket } from '../socket.js';
 import {
     useLocation,
     useNavigate,
@@ -96,11 +96,7 @@ const EditorPage = () => {
             <div className="aside">
                 <div className="asideInner">
                     <div className="logo">
-                        <img
-                            className="logoImage"
-                            src="/code-sync.png"
-                            alt="logo"
-                        />
+                     <h2>Code Collaborate</h2>
                     </div>
                     <h3>Connected</h3>
                     <div className="clientsList">
